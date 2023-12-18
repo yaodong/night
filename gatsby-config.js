@@ -9,7 +9,7 @@
  */
 module.exports = {
   siteMetadata: {
-    title: "夜间日志",
+    title: "夜間日誌",
     author: {
       name: `Kyle Mathews`,
       summary: `who lives and works in San Francisco building useful things.`,

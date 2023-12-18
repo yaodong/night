@@ -52,12 +52,16 @@
   --fontSize-5: 2.074rem;
   --fontSize-6: 2.488rem;
   --fontSize-7: 2.986rem;
-  --color-primary: #005b99;
-  --color-text: #2e353f;
-  --color-text-light: #4f5969;
-  --color-heading: #1a202c;
-  --color-heading-black: black;
-  --color-accent: #d1dce5;
+  /* Colors */
+  --color-background: #020617;
+  --color-primary: #fff;
+  --color-link: #fff;
+  --color-link-underline: #7dd3fc;
+  --color-text: #94a3b8;
+  --color-text-light: #94a3b8;
+  --color-heading: #e2e8f0;
+  --color-heading-black: #e2e8f0;
+  --color-accent: #94a3b8;
 }
 
 /* HTML elements */
@@ -79,6 +83,7 @@ body {
   font-family: var(--font-body);
   font-size: var(--fontSize-1);
   color: var(--color-text);
+  background-color: var(--color-background);
 }
 
 footer {
@@ -228,12 +233,14 @@ table thead tr th {
 /* Link */
 
 a {
-  color: var(--color-primary);
+  color: var(--color-link);
+  text-decoration: underline;
+  text-decoration-color: var(--color-link-underline);
 }
 
 a:hover,
 a:focus {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 /* Custom classes */
@@ -275,6 +282,10 @@ a:focus {
 
 .post-list-item header {
   margin-bottom: var(--spacing-4);
+}
+
+.post-list-item header small {
+  color: var(--color-text-light);
 }
 
 .header-link-home {
